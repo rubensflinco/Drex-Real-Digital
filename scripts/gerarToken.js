@@ -32,7 +32,7 @@ async function main() {
 
 
   console.log(``);
-  console.log(`Conta que o token será emitido (Contrato deploy na conta):`);
+  console.log(`Conta que o token será emitido:`);
   console.log(deployer.address);
   console.log(``);
 
