@@ -13,7 +13,8 @@ Criação de contrato digital em Solidity para criar a moeda Drex, mais conhecid
 - Agora, basta utilizar os comandos disponíveis abaixo para realizar as ações relacionadas a esta moeda.
 
 ## Comandos de ações disponíveis:
-- Emitir um token para a sua conta: `npm run gerarToken`.
+- Criar a moeda e emitir valor inicial em uma conta: `npm run gerarToken`.
+- Transferir valores entre uma conta a outra: `npm run transferir`.
 
 ## Demonstração do funcionamento:
 ![](https://i.imgur.com/snWtrJJ.png)

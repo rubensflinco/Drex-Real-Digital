@@ -24,7 +24,7 @@ contract RealDigital is ERC20, ERC20Burnable, AccessControl, Pausable {
     constructor(
         string memory name,
         string memory symbol,
-        int value,
+        int amount,
         address authority
     ) ERC20(name, symbol) {
         _setupRole(DEFAULT_ADMIN_ROLE, authority);
@@ -32,7 +32,7 @@ contract RealDigital is ERC20, ERC20Burnable, AccessControl, Pausable {
         _setupRole(MINTER_ROLE, authority);
         _setupRole(PAUSER_ROLE, authority);
         _setupRole(MOVER_ROLE, authority);
-        _mint(msg.sender, uint256 (value * 10**18) );//modificacao de mintagem para a conta que dployou o contrato
+        _mint(msg.sender, uint256 (amount * 10**18) );//modificacao de mintagem para a conta que dployou o contrato
     }
 
     function disableAccount(address member) public {
